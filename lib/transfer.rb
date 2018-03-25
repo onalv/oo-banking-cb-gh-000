@@ -19,4 +19,3 @@ class Transfer
   end
 
 end
-  
