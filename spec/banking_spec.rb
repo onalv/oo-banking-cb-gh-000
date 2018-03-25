@@ -45,7 +45,6 @@ describe "BankAccount" do
   describe '#valid?' do
     it "is valid with an open status and a balance greater than 0" do
       @broke = BankAccount.new("Kat Dennings")
-      binding.pry
       @broke.balance = 0
       @closed = BankAccount.new("Beth Behrs")
       @closed.status = "closed"
