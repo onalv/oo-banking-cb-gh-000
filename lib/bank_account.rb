@@ -8,7 +8,7 @@ class BankAccount
   end
 
   def deposit(deposit_quantity)
-    self.balance += deposit_quantity
+    @balance += deposit_quantity
   end
 
   def display_balance
@@ -16,6 +16,6 @@ class BankAccount
   end
 
   def valid?
-    self.balance > 0 && self.status == "open" ? true : false
+    @balance > 0 && self.status == "open" ? true : false
   end
 end
