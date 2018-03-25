@@ -8,10 +8,14 @@ class BankAccount
   end
 
   def deposit(deposit)
-    @balance += (deposit)
+    self.balance += (deposit)
   end
 
   def display_balance
     "Your balance is $#{self.balance}."
+  end
+
+  def valid?
+    self.balance > 0 && self.status == "open" ? true : false
   end
 end
