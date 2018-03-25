@@ -1,3 +1,5 @@
 class Transfer
-  # your code here
+  def initialize(account_1, account_2, quantity)
+
+  end
 end
